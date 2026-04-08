@@ -1,6 +1,9 @@
+from colorama import Fore, Style, init
+init(autoreset=True)
+
 numbers = []
 for i in range(10):
-    num = float(input(f"Enter number {i+1}: "))
+    num = float(input(Fore.CYAN + "Enter number {i+1}: "))
     numbers.append(num)
 
 result = numbers[0]
